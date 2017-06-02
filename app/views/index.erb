@@ -1,9 +1,8 @@
         <header>
             <h1>Finstagram</h1>
         </header>
-        
         <main role="main">
-            
+            <% @posts.each do |post| %>
 <article class="post">
     <div class="user-info">
         <img src="<%= @post_TheACT[:avatar_url] %>" alt="<%= @post_TheACT[:username] %>">
