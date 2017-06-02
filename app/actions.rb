@@ -10,11 +10,6 @@ get '/' do
     # your previous post code is up here
     # add the following @posts line
     
-    @posts = [@post_TheACT, @post_HelloIAmDoge, @post_GoodbyeIHateDoge]
-    
-    erb (:index)
-end
-    
     @post_TheACT = {
         username: "TheACT",
         avatar_url: "www.google.ca",
@@ -54,7 +49,8 @@ end
         }]
     }
     
-    [@post_TheACT, @post_HelloIAmDoge, @post_GoodbyeIHateDoge].to_s
+    @posts=[@post_TheACT, @post_HelloIAmDoge, @post_GoodbyeIHateDoge]
     
     erb(:index)
+    
 end
