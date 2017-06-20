@@ -1,4 +1,13 @@
-class Post < ActiveRecord::Base
+Class Post < ActiveRecord::Base
+
+    # (this is where your associations are, e.g. has_many :posts, etc.)...
+
+    # validations in between association defitions and methods!
+    validates_presence_of :photo_url, :user
+
+    # (this is where your def humanized_time_ago method is, along with the rest of your methods in this file)
+
+end
     
     belongs_to :user
     has_many :comments
