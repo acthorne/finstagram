@@ -1,4 +1,4 @@
-Class Post < ActiveRecord::Base
+class Post < ActiveRecord::Base
 
     # (this is where your associations are, e.g. has_many :posts, etc.)...
 
@@ -6,8 +6,6 @@ Class Post < ActiveRecord::Base
     validates_presence_of :photo_url, :user
 
     # (this is where your def humanized_time_ago method is, along with the rest of your methods in this file)
-
-end
     
     belongs_to :user
     has_many :comments
@@ -31,5 +29,5 @@ end
     def comment_count
         self.comments.size
     end
-            
+    
 end
